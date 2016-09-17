@@ -1,0 +1,8 @@
+M1 - 4 inch soil moisture
+M12 - 48 inch soil moisture
+increments depth by 4 inches
+C1 - soil conductivity 
+c12 - soil conductivity
+t1 - soil temperature in c
+t12 - soil temp 
+
