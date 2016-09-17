@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "Name": "FTC stress", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": 1, "extrude": -1, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -105.005780633216702, 40.608558364146823, 0.0 ], [ -105.005528259220497, 40.608556365821947, 0.0 ], [ -105.005495434958604, 40.609761386028872, 0.0 ], [ -105.005767702766903, 40.609760765724559, 0.0 ], [ -105.005780633216702, 40.608558364146823, 0.0 ] ] ] } }
+]
+}

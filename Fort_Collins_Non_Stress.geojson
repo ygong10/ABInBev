@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "Name": "FTC non stress", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": 1, "extrude": -1, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -105.006074690428903, 40.608559524722992, 0.0 ], [ -105.005836507762695, 40.60855853766612, 0.0 ], [ -105.005815060399399, 40.609759346857743, 0.0 ], [ -105.006048295086799, 40.60976371117745, 0.0 ], [ -105.006074690428903, 40.608559524722992, 0.0 ] ] ] } }
+]
+}
