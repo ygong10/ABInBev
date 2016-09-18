@@ -10,7 +10,8 @@ var farmData = {
         "stroke-opacity": 1,
         "fill": "#03a1ff",
         "fill-opacity": 0.5,
-        "moisture": 74.566
+        "moisture": 74.566,
+		"temperatire": 22.79
       },
       "geometry": {
         "type": "Polygon",
@@ -48,7 +49,8 @@ var farmData = {
         "stroke-opacity": 1,
         "fill": "#03a1ff",
         "fill-opacity": 0.5,
-        "moisture": 75.374
+        "moisture": 75.374,
+		"temperatire": 17.25
       },
       "geometry": {
         "type": "Polygon",
@@ -86,7 +88,8 @@ var farmData = {
         "stroke-opacity": 1,
         "fill": "#03a1ff",
         "fill-opacity": 0.5,
-        "moisture": 74.098
+        "moisture": 74.098,
+		"temperatire": 18.06
       },
       "geometry": {
         "type": "Polygon",
@@ -124,7 +127,8 @@ var farmData = {
         "stroke-opacity": 1,
         "fill": "#03a1ff",
         "fill-opacity": 0.5,
-        "moisture": 71.996
+        "moisture": 71.996,
+		"temperatire": 18.48
       },
       "geometry": {
         "type": "Polygon",
@@ -162,7 +166,8 @@ var farmData = {
         "stroke-opacity": 1,
         "fill": "#03a1ff",
         "fill-opacity": 0.5,
-        "moisture": 71.336
+        "moisture": 71.336,
+		"temperatire": 17.89
       },
       "geometry": {
         "type": "Polygon",
@@ -200,7 +205,8 @@ var farmData = {
         "stroke-opacity": 1,
         "fill": "#03a1ff",
         "fill-opacity": 0.5,
-        "moisture": 69.304
+        "moisture": 69.304,
+		"temperatire": 18.88
       },
       "geometry": {
         "type": "Polygon",
@@ -238,7 +244,8 @@ var farmData = {
         "stroke-opacity": 1,
         "fill": "#03a1ff",
         "fill-opacity": 0.5,
-        "moisture": 65.264
+        "moisture": 65.264,
+		"temperatire": 20.44
       },
       "geometry": {
         "type": "Polygon",
@@ -276,7 +283,8 @@ var farmData = {
         "stroke-opacity": 1,
         "fill": "#03a1ff",
         "fill-opacity": 0.5,
-        "moisture": 59.564
+        "moisture": 59.564,
+		"temperatire": 19.87
       },
       "geometry": {
         "type": "Polygon",
@@ -314,7 +322,8 @@ var farmData = {
         "stroke-opacity": 1,
         "fill": "#03a1ff",
         "fill-opacity": 0.5,
-        "moisture": 68.186
+        "moisture": 68.186,
+		"temperatire": 19.83
       },
       "geometry": {
         "type": "Polygon",
@@ -352,7 +361,8 @@ var farmData = {
         "stroke-opacity": 1,
         "fill": "#03a1ff",
         "fill-opacity": 0.5,
-        "moisture": 65.9
+        "moisture": 65.9,
+		"temperatire": 20.33
       },
       "geometry": {
         "type": "Polygon",
@@ -390,7 +400,8 @@ var farmData = {
         "stroke-opacity": 1,
         "fill": "#03a1ff",
         "fill-opacity": 0.5,
-        "moisture": 70.202
+        "moisture": 70.202,
+		"temperatire": 20.86
       },
       "geometry": {
         "type": "Polygon",
@@ -428,7 +439,8 @@ var farmData = {
         "stroke-opacity": 1,
         "fill": "#03a1ff",
         "fill-opacity": 0.5,
-        "moisture": 69.082
+        "moisture": 69.082,
+		"temperatire": 20.42
       },
       "geometry": {
         "type": "Polygon",
@@ -466,7 +478,8 @@ var farmData = {
         "stroke-opacity": 1,
         "fill": "#03a1ff",
         "fill-opacity": 0.5,
-        "moisture": 67.288
+        "moisture": 67.288,
+		"temperatire": 19.97
       },
       "geometry": {
         "type": "Polygon",
@@ -504,7 +517,8 @@ var farmData = {
         "stroke-opacity": 1,
         "fill": "#03a1ff",
         "fill-opacity": 0.5,
-        "moisture": 65.664
+        "moisture": 65.664,
+		"temperatire": 21.58
       },
       "geometry": {
         "type": "Polygon",
@@ -542,7 +556,8 @@ var farmData = {
         "stroke-opacity": 1,
         "fill": "#03a1ff",
         "fill-opacity": 0.5,
-        "moisture": 61.752
+        "moisture": 61.752,
+		"temperatire": 22.36
       },
       "geometry": {
         "type": "Polygon",
@@ -580,7 +595,8 @@ var farmData = {
         "stroke-opacity": 1,
         "fill": "#03a1ff",
         "fill-opacity": 0.5,
-        "moisture": 80.216
+        "moisture": 80.216,
+		"temperatire": 22.79
       },
       "geometry": {
         "type": "Polygon",
