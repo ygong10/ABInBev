@@ -1,0 +1,73 @@
+
+
+html, body {
+	width: 100%;
+	height: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.navbar-inverse {
+	margin-bottom: 0;
+	border-radius: 0 !important;
+}
+
+.navbar-brand {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+#container {
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+}
+
+#sidebar {
+	float: left;
+	height: 100%;
+	width: 200px;
+	max-width: 100%;
+	background-color: grey;
+}
+
+.sidebar-wrapper {
+  height: 100%;
+  position: relative;
+  width: 100%;  
+}
+
+#mainmap {
+	max-width: 100%;
+	height: 100%;
+	width: auto;
+}
+
+#sidebar-close {
+	margin-right: -14px;
+	margin-top: -25px;
+	float: right;
+}
+
+.info {
+	text-align: center;
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+
+

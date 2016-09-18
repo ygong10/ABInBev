@@ -24,27 +24,24 @@ $(document).ready(function() {
 	};
 	
 	info.update = function (props) {
-		this._div.innerHTML = '<h4>Soil Moisture Level</h4>' +  (props ?
-			props.moisture + ' %'
-			: 'Hover over a plot');
+		this._div.innerHTML = '<h4>Hover over a plot for details</h4>';
 	};
 
 	info.addTo(mymap);
 });
 
 
-function getColor(d) {
-	return 	d > 70 ? "#fee8c8":
-//			d > 70 ? :
-			d > 60 ? "#fdbb84":
-//			d > 50 ? :
-//			d > 40 ? #e34a33:
-				"#e34a33";
+function getColor(moisture, temperature) {
+	var totalPercentage = moisture + temperature;
+
+	// gradient
+    var hue=((1 - (moisture / 100)) * 120).toString(10);
+    return ["hsl(",hue,",100%,50%)"].join("");
 }
 
 function style(feature) {
 	return {
-		fillColor: getColor(feature.properties.moisture),
+		fillColor: getColor(feature.properties.moisture, feature.properties.temperature),
 		fillOpacity: 0.7,
 		dashArray: "3",
 	};
@@ -59,7 +56,7 @@ function highlightPlot(e) {
 		fillOpacity: 0.7,
 	});
 	layer.bringToFront();
-	
+	layer.openPopup();
 	info.update(layer.feature.properties);
 }
 function resetHighlight(e) {
@@ -68,6 +65,10 @@ function resetHighlight(e) {
 }
 
 function onEachFeature(feature, layer) {
+	layer.bindPopup(
+		'<h6><b>Soil Moisture Level</b></h6>' + feature.properties.moisture + '%' + '<h6><b>Soil Temperature</b></h6>' + feature.properties.temperature + '\xB0 C', 
+		{ offset: new L.Point(0,-27)}
+	);
     layer.on({
         mouseover: highlightPlot,
         mouseout: resetHighlight,
