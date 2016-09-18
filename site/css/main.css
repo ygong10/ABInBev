@@ -13,9 +13,8 @@ html, body {
 
 #mainmap {
 	width: 100%;
-	height: 100%;
-	/*position: relative;*/
-	z-index : 0;
+	height: 600px;
+
 }
 
 p {
@@ -34,11 +33,6 @@ p {
 .info h4 {
     margin: 0 0 5px;
     color: #777;
-}
-
-#custom-nav {
-	/*position: absolute;*/
-	z-index: 1;
 }
 
 
