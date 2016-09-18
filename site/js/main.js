@@ -12,6 +12,7 @@ sidebar.css('margin-left', '-155px');
 sidebarButton.on("click", function(){
 
 	if (!sidebarClosed){
+		$('#sidebar-content').empty();
 		sidebar.animate({marginLeft: "-155px"});
 		$('#sidebar-close > span').removeClass('glyphicon-arrow-left');
 		$('#sidebar-close > span').addClass('glyphicon-arrow-right');

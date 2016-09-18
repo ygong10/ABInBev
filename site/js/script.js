@@ -96,7 +96,9 @@ function onEachFeature(feature, layer) {
         mouseout: resetHighlight,
     });
   	layer.on('click', function (e) { // useful for sidebar content
-        sidebarContent.html('<h5><b>Soil Moisture Level (%)</b></h5>' + e.target.feature.properties.moisture + ' %<br><h5><b>Soil Temperature (\xB0C)</b></h5>' + e.target.feature.properties.temperature + '\xB0C<br><br><img src="data/barley.jpg"><br><br><button type="button" class="btn btn-primary" id="graphbutton" data-toggle="modal" data-target="#myModal">Show Graph</button>');
+    	var myTime = new Date();
+
+        sidebarContent.html('<h5><b>Soil Moisture Level (%)</b></h5>' + e.target.feature.properties.moisture + ' %<br><h5><b>Soil Temperature (\xB0C)</b></h5>' + e.target.feature.properties.temperature + '\xB0C<br><br><img src="data/barley.jpg"><h3>Last taken</h3>' + myTime.getFullYear() + '-' + myTime.getMonth() + '-' + myTime.getDate() + ':' + myTime.getHours() + ':' + myTime.getMinutes() + ':' + myTime.getSeconds() + ':' + myTime.getMilliseconds() + '<br><br><button type="button" class="btn btn-primary" id="graphbutton" data-toggle="modal" data-target="#myModal">Show Graph</button>');
     	if (sidebarClosed) {
 			sidebarButton.trigger("click");
 		}
