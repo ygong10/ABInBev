@@ -51,14 +51,32 @@
 	      </div>
 	    </div>
 	    <div id="sidebar-content">
-	    Information here
+	    Click on a plot for more info.
 	    </div>
 	  </div>
 	</div>
 
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	        <button type="button" class="btn btn-primary modal-title" id="myModal-moisture">Moisture</button>
+	        <button type="button" class="btn btn-primary modal-title" id="myModal-temperature">Temperature</button>
+	      </div>
+	      <div class="modal-body">
+	      <img src="data/Moisture_day.png" />
+	      <img src="data/Moisture_week.png"/>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
 	<div id="mainmap"></div>
 	<div id="droneVideo">
-		 <video width="480" height="360" autoplay muted><source src="video/droneVideo.mp4" type="video/mp4"></video>
+		 <video width="480" height="360" autoplay muted loop><source src="video/droneVideo.mp4" type="video/mp4"></video>
 </div>
   </div>
 

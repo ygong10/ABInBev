@@ -34,31 +34,8 @@ $(document).ready(function() {
 	};
 
 	info.addTo(mymap);
-	/* test for video highlighting 
-	/*geojson.eachLayer(function(layer){
-		setInterval(function(){
-			highlightPlot2(layer);
-		}, 5000); 
-	}); */
 
 });
-
-/*function highlightPlot2(lay) {
-	var layer = lay;
-	layer.setStyle({
-		weight: 5,
-		color: "#666",
-		dashArray: "",
-		fillOpacity: 0.7,
-	});
-	layer.bringToFront();
-	info.update(layer.feature.properties);
-}
-
-function resetHighlight2(lay) {
-	geojson.resetStyle(e.target);
-	info.update();
-}*/
 
 function getColor(moisture, temperature) {
 	var totalPercentage = moisture + temperature;
@@ -119,7 +96,7 @@ function onEachFeature(feature, layer) {
         mouseout: resetHighlight,
     });
   	layer.on('click', function (e) { // useful for sidebar content
-        sidebarContent.html('<h5><b>Soil Moisture Level (%)</b></h5>' + e.target.feature.properties.moisture + ' %<br><h5><b>Soil Temperature (\xB0C)</b></h5>' + e.target.feature.properties.temperature + '\xB0C<br><br><button type="button" class="btn btn-primary" id="graphbutton">Show Graph</button>');
+        sidebarContent.html('<h5><b>Soil Moisture Level (%)</b></h5>' + e.target.feature.properties.moisture + ' %<br><h5><b>Soil Temperature (\xB0C)</b></h5>' + e.target.feature.properties.temperature + '\xB0C<br><br><img src="data/barley.jpg"><br><br><button type="button" class="btn btn-primary" id="graphbutton" data-toggle="modal" data-target="#myModal">Show Graph</button>');
     	if (sidebarClosed) {
 			sidebarButton.trigger("click");
 		}

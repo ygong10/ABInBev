@@ -26,6 +26,7 @@ sidebarButton.on("click", function(){
 
 var highlightInterval = null;
 var currentLayer = null;
+var index = 0;
 
 videoLink.on("click", function(){
 	videoOff = !videoOff;
@@ -35,7 +36,7 @@ videoLink.on("click", function(){
 		videoLink.css('color', 'red');
 		video.css('display', 'block');
 		
-		var index = 0;
+		//var index = 0;
 		highlightInterval = setInterval(function() {
 			if (currentLayer != null) {
 				resetLayer(currentLayer);
@@ -54,7 +55,18 @@ videoLink.on("click", function(){
 		}
 		clearInterval(highlightInterval);
 	}
-})
+});
+
+$('#myModal-moisture').click(function(){
+	$('.modal-body').html('<img src="data/Moisture_day.png" /><img src="data/Moisture_week.png"/>');
+});
+
+$('#myModal-temperature').click(function(){
+	//$('#plants').empty();
+	$('.modal-body').html('<img src="data/Temp_day.png" /><img src="data/Temp_week.png"/>');
+});
+
+
 
 
 
