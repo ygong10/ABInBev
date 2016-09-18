@@ -3,11 +3,12 @@ var videoLink = $("#videoLink");
 var sidebarContent = $("#sidebar-content");
 var sidebarButton = $("#sidebar-close");
 var sidebar = $('#sidebar');
-var sidebarClosed = false;
-/* sidebar slide aniamtion */
+var sidebarClosed = true;
 var videoOff = true;
 video.css('display', 'none');
 
+/* sidebar slide aniamtion */
+sidebar.css('margin-left', '-155px');
 sidebarButton.on("click", function(){
 
 	if (!sidebarClosed){
