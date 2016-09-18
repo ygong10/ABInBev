@@ -24,17 +24,33 @@ sidebarButton.on("click", function(){
 	sidebarClosed = !sidebarClosed;
 });
 
+var highlightInterval = null;
+var currentLayer = null;
+
 videoLink.on("click", function(){
 	videoOff = !videoOff;
-
+	
 	if (!videoOff){
 		videoLink.text("Disable LiveStream");
 		videoLink.css('color', 'red');
 		video.css('display', 'block');
+		
+		var index = 0;
+		highlightInterval = setInterval(function() {
+			if (currentLayer != null) {
+				resetLayer(currentLayer);
+			}
+			highlightLayer(layers[index]);
+			currentLayer = layers[index];
+			index = (index+1)%layers.length;
+		}, 2000);
 	}else{
 		videoLink.text("Enable LiveStream");
 		videoLink.css('color', 'green');		
 		video.css('display', 'none');
+		
+		resetLayer(currentLayer);
+		clearInterval(highlightInterval);
 	}
 })
 

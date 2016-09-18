@@ -3,7 +3,7 @@ var geojson;
 var info;
 var mymap;
 
-var layers;
+var layers = [];
 
 $(document).ready(function() {
 	mymap = L.map("mainmap").setView([40.60913078424154, -105.00652760267258], 17);
@@ -76,6 +76,21 @@ function style(feature) {
 	};
 }
 
+function highlightLayer(layer) {
+	layer.setStyle({
+		weight: 5,
+		color: "#666",
+		dashArray: "",
+		fillOpacity: 0.7,
+	});
+	layer.bringToFront();
+	layer.openPopup();
+}
+function resetLayer(layer) {
+	geojson.resetStyle(layer);
+	layer.closePopup();
+}
+
 function highlightPlot(e) {
 	var layer = e.target;
 	layer.setStyle({
@@ -104,8 +119,10 @@ function onEachFeature(feature, layer) {
         mouseout: resetHighlight,
     });
   	layer.on('click', function (e) { // useful for sidebar content
-        sidebarContent.html(e.target.feature.properties.moisture);
+        sidebarContent.html('<h5><b>Soil Moisture Level (%)</b></h5>' + e.target.feature.properties.moisture + ' %<br><h5><b>Soil Temperature (\xB0C)</b></h5>' + e.target.feature.properties.temperature + '\xB0C');
     });
+	
+	layers.push(layer);
 }
 
 
