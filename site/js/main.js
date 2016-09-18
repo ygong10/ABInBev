@@ -49,11 +49,12 @@ videoLink.on("click", function(){
 		videoLink.css('color', 'green');		
 		video.css('display', 'none');
 		
-		resetLayer(currentLayer);
+		if (currentLayer != null) {
+			resetLayer(currentLayer);
+		}
 		clearInterval(highlightInterval);
 	}
 })
-
 
 
 

@@ -119,8 +119,11 @@ function onEachFeature(feature, layer) {
         mouseout: resetHighlight,
     });
   	layer.on('click', function (e) { // useful for sidebar content
-        sidebarContent.html('<h5><b>Soil Moisture Level (%)</b></h5>' + e.target.feature.properties.moisture + ' %<br><h5><b>Soil Temperature (\xB0C)</b></h5>' + e.target.feature.properties.temperature + '\xB0C');
-    });
+        sidebarContent.html('<h5><b>Soil Moisture Level (%)</b></h5>' + e.target.feature.properties.moisture + ' %<br><h5><b>Soil Temperature (\xB0C)</b></h5>' + e.target.feature.properties.temperature + '\xB0C<br><br><button type="button" class="btn btn-primary" id="graphbutton">Show Graph</button>');
+    	if (sidebarClosed) {
+			sidebarButton.trigger("click");
+		}
+	});
 	
 	layers.push(layer);
 }
